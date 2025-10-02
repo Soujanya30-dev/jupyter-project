@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-df = pd.read_csv("Play Store Data.csv")
-reviews_df = pd.read_csv("User Reviews.csv")
+df = pd.read_csv("data/Play Store Data.csv")
+reviews_df = pd.read_csv("data/User Reviews.csv")
 
 st.title("Google Play Store Dashboard")
 
