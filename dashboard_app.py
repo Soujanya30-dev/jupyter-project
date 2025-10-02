@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+nltk.download('vader_lexicon')
 
 df = pd.read_csv("data/Play Store Data.csv")
 reviews_df = pd.read_csv("data/User Reviews.csv")
